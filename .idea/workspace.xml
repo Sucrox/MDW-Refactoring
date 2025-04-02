@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager" selected="JUnit.usantatecla.movies.v21 in movies">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f4fad9e-304f-47ec-9fe2-4babd3fb1e42" name="Changes" comment="Initial Project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Sucrox"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Sucrox/MDW-Refactoring.git",
+    "accountId": "dfea4c76-fa1d-4c14-9557-f76e21e4b608"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2vBJgtyQSDZ9Dc2w8AxqyX6imuT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CustomerTest.executor": "Run",
+    "JUnit.usantatecla in movies.executor": "Run",
+    "JUnit.usantatecla.movies.v21 in movies.executor": "Run",
+    "JUnit.usantatecla.movies.vAdrianAlonso in movies.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/MIW/MDW/java-master/src/test/java/usantatecla/movies/vAdrianAlonso",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\MIW\MDW\java-master\src\test\java\usantatecla\movies\vAdrianAlonso" />
+      <recent name="C:\Users\Usuario\MIW\MDW\java-master\src\main\java\usantatecla\movies\vAdrianAlonso" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.usantatecla.movies.vAdrianAlonso in movies">
+    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.movies.vAdrianAlonso.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla.movies.vAdrianAlonso" />
+      <option name="MAIN_CLASS_NAME" value="usantatecla.movies.vAdrianAlonso.CustomerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="usantatecla in movies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movies" />
       <extension name="coverage">
@@ -30,11 +100,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="usantatecla.movies.vAdrianAlonso in movies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.movies.vAdrianAlonso.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla.movies.vAdrianAlonso" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.usantatecla.movies.vAdrianAlonso in movies" />
+        <item itemvalue="JUnit.CustomerTest" />
         <item itemvalue="JUnit.usantatecla.movies.v21 in movies" />
         <item itemvalue="JUnit.usantatecla in movies" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f4fad9e-304f-47ec-9fe2-4babd3fb1e42" name="Changes" comment="" />
+      <created>1743612648274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743612648274</updated>
+      <workItem from="1743612649442" duration="211000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Project">
+      <option name="closed" value="true" />
+      <created>1743612722539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743612722539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Project" />
   </component>
 </project>
