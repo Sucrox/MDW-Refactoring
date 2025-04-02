@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PropertiesComponent">{}</component>
+  <component name="RunManager" selected="JUnit.usantatecla.movies.v21 in movies">
+    <configuration name="usantatecla in movies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usantatecla.movies.v21 in movies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.movies.v21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla.movies.v21" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.usantatecla.movies.v21 in movies" />
+        <item itemvalue="JUnit.usantatecla in movies" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
