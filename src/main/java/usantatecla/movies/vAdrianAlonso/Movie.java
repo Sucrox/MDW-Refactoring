@@ -1,22 +1,22 @@
 package usantatecla.movies.vAdrianAlonso;
 
-public class Movie {
+public abstract class Movie {
 
 	private String title;
 	
 	private Price price;
+
+	private static final int FREQUENT_RENTER_POINTS = 1;
 	
 	public Movie(String title, Price price) {
 		this.title = title;
 		this.price = price;
 	}
 	
-	public double getCharge(int daysRented) {
-		return price.getCharge(daysRented);
-	}
+	public abstract double getCharge(int daysRented);
 	
 	public int getFrequentRenterPoints(int daysRented) {
-		return price.getFrequentRenterPoints(daysRented);
+		return Movie.FREQUENT_RENTER_POINTS;
 	}
 	
 	public void setPrice(Price price) {
