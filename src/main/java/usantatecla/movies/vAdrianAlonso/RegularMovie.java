@@ -1,8 +1,8 @@
 package usantatecla.movies.vAdrianAlonso;
 
 public class RegularMovie extends Movie {
-    public RegularMovie(String title, Price price) {
-        super(title, price);
+    public RegularMovie(String title) {
+        super(title);
     }
 
     private static final double CHARGE = 2.0;

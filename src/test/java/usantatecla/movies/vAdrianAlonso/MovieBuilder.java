@@ -3,8 +3,7 @@ package usantatecla.movies.vAdrianAlonso;
 public class MovieBuilder {
 
 	private String title;
-	
-	private Price price;
+
 	private Movie movie;
 	
 	public MovieBuilder() {
@@ -17,17 +16,17 @@ public class MovieBuilder {
 	}
 	
 	public MovieBuilder childrens() {
-		this.movie = new ChildrenMovie(this.title, this.price);
+		this.movie = new ChildrenMovie(this.title);
 		return this;
 	}
 	
 	public MovieBuilder regular() {
-		this.movie = new RegularMovie(this.title, this.price);
+		this.movie = new RegularMovie(this.title);
 		return this;
 	}
 	
 	public MovieBuilder newRelease() {
-		this.movie = new NewReleaseMovie(this.title, this.price);
+		this.movie = new NewReleaseMovie(this.title);
 		return this;
 	}
 	
