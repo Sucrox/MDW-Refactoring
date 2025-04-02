@@ -6,149 +6,133 @@ import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
 
+	private final String CUSTOMER_NAME = "CUSTOMER_NAME";
+	private final String MOVIE_NAME = "MOVIE_NAME";
 	@Test
 	public void withoutRentalsTest() {
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME)
 				.totalAmount(0).frequentRenterPoints(0).build();
 		assertEquals(result, statement);
 	}
 
 	@Test
 	public void regularRental1DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).regular().build();
+
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).regular().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(1).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 2)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 2)
 				.totalAmount(2).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void regularRental2DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).regular().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).regular().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(2).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 2)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 2)
 				.totalAmount(2).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 
 	@Test
 	public void regularRental3DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).regular().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).regular().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(3).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 3.5)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 3.5)
 				.totalAmount(3.5).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void newReleaseRental1DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).newRelease().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).newRelease().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(1).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 3)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 3)
 				.totalAmount(3).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void newReleaseRental2DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).newRelease().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).newRelease().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(2).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 3)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 3)
 				.totalAmount(3).frequentRenterPoints(2).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void newReleaseRental3DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).newRelease().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).newRelease().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(3).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 3)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 3)
 				.totalAmount(3).frequentRenterPoints(2).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void childrensRental1DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).childrens().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).childrens().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(1).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 1.5)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 1.5)
 				.totalAmount(1.5).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void childrensRental3DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).childrens().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).childrens().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(3).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 1.5)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 1.5)
 				.totalAmount(1.5).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
 	
 	@Test
 	public void childrensRental4DayTest() {
-		String movieName = "movieName";
-		Movie movie = new MovieBuilder().title(movieName).childrens().build();
+		Movie movie = new MovieBuilder().title(MOVIE_NAME).childrens().build();
 		Rental rental = new RentalBuilder().movie(movie).daysRented(4).build();
-		String customerName = "customerName";
-		Customer customer = new CustomerBuilder().name(customerName).rental(rental).build();
+		Customer customer = new CustomerBuilder().name(CUSTOMER_NAME).rental(rental).build();
 
 		String statement = customer.statement();
 
-		String result = new StatementBuilder().customerName(customerName).movie(movieName, 6)
+		String result = new StatementBuilder().customerName(CUSTOMER_NAME).movie(MOVIE_NAME, 6)
 				.totalAmount(6).frequentRenterPoints(1).build();
 		assertEquals(result, statement);
 	}
@@ -167,7 +151,7 @@ public class CustomerTest {
 		Movie childrensMovie = new MovieBuilder().title(childrensMovieName).childrens().build();
 		Rental childrensRental = new RentalBuilder().movie(childrensMovie).daysRented(10).build();
 		
-		String customerName = "customerName";
+		String customerName = "CUSTOMER_NAME";
 		Customer customer = new CustomerBuilder().name(customerName)
 				.rental(regularRental).rental(newReleaseRental).rental(childrensRental).build();
 
